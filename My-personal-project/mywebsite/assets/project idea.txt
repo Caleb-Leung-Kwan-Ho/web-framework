@@ -1,0 +1,3 @@
+exercise log create stats and trend
+Piano: hook up spotify API, use those abstrct date to cjhose  piano musics
+ find anime APIS

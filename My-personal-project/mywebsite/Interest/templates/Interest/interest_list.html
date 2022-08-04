@@ -1,23 +1,21 @@
+{% extends 'base_layer.html' %}
+{% block content %}
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
-</head>
 <body>
-    <h1>test</h1>
-    <div class="hobbies">
-        {% for hobby in hobbies %}
+    <button type="button" class="btn btn-info">
+        <h1>Interest</h1>
+    </button>
+    <div class="Interest">
+        <ul class="list-group"></ul>
+        {% for hobby in Interest %}
             <div class="hobby">
-                <h2><a href='#'>{{hobby.Hobby}}</a></h2>
-                <p>{{hobby.date}}</p>
-                <p>{{hobby.snippet}}</p>
+                <li class="list-group-item d-flex justify-content-between align-items-center"></lili>
+                {{hobby.Hobby}}
+                <span class="badge badge-primary badge-pill">Rank: {{hobby.rank}}</span>
+                </li>
             </div>
         {% endfor %}
     </div>
 </body>
-</html>
+
+{% endblock %}
