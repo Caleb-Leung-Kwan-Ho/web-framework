@@ -1,9 +1,10 @@
 {% extends 'base_layer.html' %}
 {% block content %}
 <body>
-    <button type="button" class="btn btn-info">
-        <h1>Interest</h1>
-    </button>
+    <div class="alert alert-info" role="alert" style="font-size:x-large;">
+        Interests
+    </div>
+    <div class="container marketing">
     <div class="Interest">
         <ul class="list-group">
         {% for hobby in Interest %}
@@ -15,6 +16,7 @@
             </div>
         {% endfor %}
         </ul>
+    </div>
     </div>
 </body>
 

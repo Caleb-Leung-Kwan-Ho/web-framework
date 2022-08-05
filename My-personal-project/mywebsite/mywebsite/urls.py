@@ -23,6 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('Interest/',include('Interest.urls')),
     path('technical_skills/',include('technical_skills.urls')),
+    path('homepage/',include('homepage.urls')),
     re_path(r'^$',views.homepage)
 ]
     

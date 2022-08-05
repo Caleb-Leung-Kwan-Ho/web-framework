@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Interest',
-    'technical_skills'
+    'technical_skills',
+    'homepage'
 ]
 
 MIDDLEWARE = [
