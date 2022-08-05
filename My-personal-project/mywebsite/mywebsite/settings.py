@@ -40,7 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'Interest',
     'technical_skills',
-    'homepage'
+    'homepage',
+    'softskills',
+    'Certification'
 ]
 
 MIDDLEWARE = [

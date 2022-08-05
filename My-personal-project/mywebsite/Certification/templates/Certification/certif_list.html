@@ -2,16 +2,16 @@
 {% block content %}
 <body>
     <div class="alert alert-info" role="alert" style="font-size:x-large;">
-        Technical skills
+        Certifications
     </div>
     <div class="container marketing">
-    <div class="tech_skills">
+    <div class="certifs">
         <ul class="list-group">
-        {% for skills in tech_skills %}
-            <div class="skills">
+        {% for archive in certifs %}
+            <div class="archive">
                 <li class="list-group-item d-flex justify-content-between align-items-center"></lili>
-                {{skills.title}}
-                <span class="badge badge-primary badge-pill">Level: {{skills.show}}</span>
+                {{archive.name}}
+                <span class="badge badge-primary badge-pill"><a href="{{archive.confirment}}" style="color:white; font-size: large;">Show credential</a></span>
                 </li>
             </div>
         {% endfor %}

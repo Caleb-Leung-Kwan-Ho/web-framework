@@ -24,7 +24,9 @@ urlpatterns = [
     path('Interest/',include('Interest.urls')),
     path('technical_skills/',include('technical_skills.urls')),
     path('homepage/',include('homepage.urls')),
-    re_path(r'^$',views.homepage)
+    path('softskills',include('softskills.urls')),
+    path('Certification',include('Certification.urls')),
+    re_path(r'^$',views.homepage),
 ]
     
 urlpatterns += staticfiles_urlpatterns()
