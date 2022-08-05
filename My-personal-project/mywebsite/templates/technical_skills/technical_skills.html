@@ -1,0 +1,21 @@
+{% extends 'base_layer.html' %}
+{% block content %}
+<body>
+    <button type="button" class="btn btn-info">
+        <h1>Technical Skills</h1>
+    </button>
+    <div class="tech_skills">
+        <ul class="list-group">
+        {% for skills in tech_skills %}
+            <div class="skills">
+                <li class="list-group-item d-flex justify-content-between align-items-center"></lili>
+                {{skills.title}}test
+                <span class="badge badge-primary badge-pill">Level: {{skills.show}}</span>
+                </li>
+            </div>
+        {% endfor %}
+        </ul>
+    </div>
+</body>
+
+{% endblock %}
