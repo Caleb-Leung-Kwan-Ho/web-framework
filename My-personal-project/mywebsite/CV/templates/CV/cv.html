@@ -1,0 +1,27 @@
+{% extends 'base_layer.html' %}
+{% block content %}
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">CV/Resume</h1>
+      <p class="lead">My previous experience</p>
+    </div>
+</div>
+<div class="container marketing">
+    <div class="Interest">
+        <ul class="list-group list-group-light mb-3">
+        {% for exp in exps %}
+            <div class="exp">
+                <li class="list-group-item">
+                <h5 class="fw-bold">{{exp.title}}</h5>
+                <p class="text-muted mb-2 fw-bold">{{exp.start_date}} - {{exp.end_date}}</p>
+                <p class="text-muted mb-0">
+                    {{exp.details}}
+                </p>
+                </li>
+            </div>
+        {% endfor %}
+        </ul>
+    </div>
+</div>
+
+{% endblock %}
