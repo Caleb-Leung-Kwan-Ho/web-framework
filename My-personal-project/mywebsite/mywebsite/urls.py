@@ -26,6 +26,7 @@ urlpatterns = [
     path('homepage/',include('homepage.urls')),
     path('softskills',include('softskills.urls')),
     path('Certification',include('Certification.urls')),
+    path('CV/',include('CV.urls')),
     re_path(r'^$',views.homepage),
 ]
     

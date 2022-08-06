@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'technical_skills',
     'homepage',
     'softskills',
-    'Certification'
+    'Certification',
+    'CV'
 ]
 
 MIDDLEWARE = [
