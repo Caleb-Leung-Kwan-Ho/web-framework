@@ -1,1 +1,8 @@
-My-personal-project/mywebsite/mywebsite/settings.py
+# Scrapy stuff:
+.scrapy
+
+#avoid updating SSH key
+My-personal-project/
+mywebsite/
+mywebsite/
+settings.py
